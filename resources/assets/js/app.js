@@ -31,6 +31,10 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
-import Vue from 'vue';
+import Vue      from 'vue';
 
-new Vue().$mount('#app');
+import router   from './routes'
+
+new Vue({
+    router
+}).$mount('#app');
