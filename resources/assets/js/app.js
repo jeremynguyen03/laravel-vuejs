@@ -4,7 +4,8 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('foundation-sites');
-} catch (e) {}
+} catch (e) {
+}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -30,7 +31,6 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
+import Vue from 'vue';
 
-const app = new Vue({
-    el: '#app'
-});
+new Vue().$mount('#app');
